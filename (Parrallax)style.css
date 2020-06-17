@@ -1,0 +1,78 @@
+* {
+	box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+*:focus {
+  outline: 0;
+}
+
+html {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+body {
+	background-color: #0a2a43;
+	font-family: 'Poppins', sans-serif;
+	min-height: 300vh;
+}
+
+section:before {
+	background-image: linear-gradient(
+											to top,
+											#0a2a43,
+											rgba(0, 0, 0, 0)
+										);
+	bottom: 0;
+	height: 100px;
+	right: 0;
+}
+
+section:before,
+section:after {
+	content: '';
+	position: absolute;
+	width: 100%;
+	z-index: 3;
+}
+
+section:after {
+	background-color: #0a2a43;
+	height: 100%;
+	left: 0;
+	mix-blend-mode: color;
+	top: 0;
+}
+
+section {
+	align-items: center;
+	display: flex;
+	height: 100vh;
+	justify-content: center;
+	overflow: hidden;
+	position: relative;
+	text-align: center;
+	width: 100%;
+}
+
+section img {
+	height: 100%;
+	left: 0;
+	object-fit: cover;
+	pointer-events: none;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+
+#text {
+	color: #ffffff;
+	font-size: 7rem;
+	position: relative;
+	z-index: 1;
+}
+
+#road {
+	z-index: 2;
+}

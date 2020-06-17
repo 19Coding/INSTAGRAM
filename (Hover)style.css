@@ -1,0 +1,31 @@
+html {
+      font-size: 10px;
+  }
+
+  body {
+      overflow: hidden;
+  }
+
+  #canvas {
+      position: absolute;
+      top: 0px;
+      left: 0px;
+  }
+
+  section {
+      width: 50%;
+      margin: 10% auto;
+      color: white;
+      text-align: center;
+      position: relative;
+      z-index: 5;
+
+      h1 {
+          font-size: 6rem;
+          text-shadow: 1px 1px 8px black;
+      }
+
+      p {
+          font-size: 2rem;
+      }
+  }
